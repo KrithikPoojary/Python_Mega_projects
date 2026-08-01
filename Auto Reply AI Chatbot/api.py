@@ -2,7 +2,7 @@ from groq import Groq
 import pyperclip
 
 client = Groq(
-    api_key="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"
+    api_key="gsk_PJh##########################"
 )
 
 # Clipboard se chat lo
