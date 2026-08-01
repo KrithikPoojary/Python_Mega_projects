@@ -59,7 +59,7 @@ completion = client.chat.completions.create(
 response = completion.choices[0].message.content
 print(response)
 
-# Chat input box pe click
+# Chat input box  click
 pyautogui.click(668, 814)
 time.sleep(0.3)
 
