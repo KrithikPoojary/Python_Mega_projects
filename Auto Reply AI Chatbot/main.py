@@ -4,7 +4,7 @@ import pyperclip
 import time
 
 client = Groq(
-    api_key="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"
+    api_key="API_KEY"
 )
 
 # 1. Chat icon pe click
