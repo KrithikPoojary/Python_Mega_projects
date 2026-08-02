@@ -11,5 +11,11 @@ def chatbot(prompt):   # C C C C - client , chat , completion , create
     )
     return response.choice[0].message.content.strip()
 
-
-
+if __name__ == "__main__":
+    user_input = input("You: ")
+    while True:
+        if user_input in ['exit' , "bye" , 'quit']:
+            print("Thanks you , see you soon mate!")
+            break
+        response = chatbot(user_input)
+        print("Chatbot: " , response)
