@@ -5,4 +5,4 @@ client = Groq(
 )
 
 def chatbot(prompt):
-    w
+    response 
