@@ -4,5 +4,11 @@ client = Groq(
     api_key = "API"
 )
 
-def chatbot(prompt):
-    response 
+def chatbot(prompt):   # C C C C - client , chat , completion , create
+    response = client.chat.completions.creat(
+        model = "llama-3.3-70b-versatile" ,  
+        messages = [{}]
+    )
+
+
+    
