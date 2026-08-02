@@ -4,3 +4,5 @@ client = Groq(
     api_key = "API"
 )
 
+def chatbot(prompt):
+    w
