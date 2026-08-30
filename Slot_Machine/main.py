@@ -2,11 +2,15 @@ print("*****Welcome to Slot machine!!!*****")
 
 def deposit():
     while True:
-        amount = input("Enter your deposit: $")
-        if amount > 0:
-            break
+        amount = input("Enter your deposit: $")   #blud we can do directly but if the value is not int then it gives error (in int(input))
+        if amount.isdigit(): 
+            amount= int(amount)
+            if amount > 0:
+                break
+            else:
+                print("Amount should be greater then 0!")
         else:
-            print("Amount should be greater then 0!")
+            print("Amount should be Entered as numbers")
     return amount
 
 deposit()
