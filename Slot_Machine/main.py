@@ -1,4 +1,4 @@
-MAX_LINES
+MAX_LINES = 3
 
 print("*****Welcome to Slot machine!!!*****")
 
