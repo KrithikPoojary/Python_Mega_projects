@@ -27,10 +27,11 @@ def get_number_of_lines():
                     print("Enter the valid number.")
             else:
                 print("lines should be entered as numbers")
-            return lines
+    return lines
 
 def main():
     balance = deposit()
     lines = get_number_of_lines()
     print(balance , lines)
+
 main()
