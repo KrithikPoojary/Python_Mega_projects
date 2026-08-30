@@ -2,7 +2,16 @@ MAX_LINES = 3
 MAX_BET = 100        #Here capitals are constants...
 MIN_BET = 30
 
+
+ROWS = 3
+COLS = 3
+
 print("*****Welcome to Slot machine!!!*****")
+
+symbol_count = {
+    
+}
+
 
 def deposit():
     while True:
