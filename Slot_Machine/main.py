@@ -37,9 +37,11 @@ def print_slot_machine(columns):             #This func is called for transpose 
     for row in range(len(columns[0])):
         for i, column in enumerate(columns):
             if i != len(columns) - 1:
-                print(column[row], "|")
+                print(column[row], end="  |  ")
             else:
-                print(column[row])
+                print(column[row] , end="")
+
+        print()
 # .............................................................
 
 def deposit():
@@ -94,6 +96,7 @@ def main():
         else:
             break
     print(f"You are betting ${bet} on {lines} lines and Your total bet amount is {Total_bet}$")
-    print(balance , lines,bet)
+    slots = get_slot_machine_spin(ROWS , COLS , symbol_count)
+    print_slot_machine(slots)
 
 main()
