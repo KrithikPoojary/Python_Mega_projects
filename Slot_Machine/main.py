@@ -31,14 +31,9 @@ def get_number_of_lines():
                 print("lines should be entered as numbers")
     return lines
 
-def main():
-    balance = deposit()
-    lines = get_number_of_lines()
-    print(balance , lines)
-
 def get_bet():
     while True:
-        bet = input(f"Enter the Amount of bet ({MIN_BET}-{MAX_BET}):  ")
+        bet = input(f"Enter the Amount of bet ({MIN_BET}$-{MAX_BET}$) on each line:  ")
         if bet.isdigit():
             bet= int(bet)
             if MIN_BET <= bet <= MAX_BET:
@@ -48,3 +43,14 @@ def get_bet():
         else:
             print("Bet should be entered as numbers")
     return bet
+
+
+def main():
+    balance = deposit()
+    lines = get_number_of_lines()
+    bet = get_bet()
+    Total_bet = bet*lines
+    print(f"You are betting ${bet} on {lines} lines and Your total bet amount is {Total_bet}$")
+    print(balance , lines,bet)
+
+main()
