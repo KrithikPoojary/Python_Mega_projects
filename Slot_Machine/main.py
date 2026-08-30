@@ -1,3 +1,5 @@
+MAX_LINES
+
 print("*****Welcome to Slot machine!!!*****")
 
 def deposit():
@@ -16,4 +18,14 @@ def deposit():
 deposit()
 
 def get_number_of_lines():
-    
+    while True:
+            lines = input(f"Enter the number of line to bet on : ")
+            if amount.isdigit():
+                amount= int(amount)
+                if amount > 0:
+                    break
+                else:
+                    print("Amount should be greater then 0!")
+            else:
+                print("Amount should be entered as numbers")
+        # return amount
