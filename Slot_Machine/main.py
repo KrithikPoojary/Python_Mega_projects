@@ -15,7 +15,6 @@ def deposit():
             print("Amount should be entered as numbers")
     return amount
 
-deposit()
 
 def get_number_of_lines():
     while True:
@@ -32,3 +31,6 @@ def get_number_of_lines():
 
 def main():
     balance = deposit()
+
+
+get_number_of_lines()
