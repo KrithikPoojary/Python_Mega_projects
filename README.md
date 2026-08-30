@@ -4,6 +4,8 @@
 
 - Jarvis AI Assistant
 - WhatsApp Auto-Reply Chatbot
+- Slot Machine
+- K - AI Chatbot
 
 ## Jarvis AI Assistant Features
 
@@ -22,6 +24,28 @@
 - Automated Message Sending
 - Context-Aware Reply Generation
 
+## Slot Machine Features
+
+- Deposit & Balance Management System
+- Bet on Multiple Lines (up to 3)
+- Configurable Min/Max Bet Limits
+- Randomized Slot Symbol Generation (weighted by symbol count)
+- Dynamic Slot Grid Display (rows x columns)
+- Win Checking Across Betted Lines
+- Symbol-based Payout Values
+- Play Again / Quit Loop
+- Automatic Game Over on Insufficient Balance
+- Input Validation for Deposits, Lines, and Bets
+
+## K - AI Chatbot Features
+
+- Custom AI Personality (frank, human-like tone with minimal emojis)
+- Short, Impactful, Conversational Responses
+- Supports English + Hinglish Communication
+- Powered by Groq API (LLaMA 3.3 70B Versatile)
+- Simple Terminal-based Chat Loop
+- Exit Commands (`exit`, `bye`, `quit`)
+
 ## Technologies
 
 - Python 3
@@ -33,6 +57,7 @@
 - PyAutoGUI
 - Pyperclip
 - Groq API
+- random (built-in module)
 
 ## What I Learned
 
@@ -49,6 +74,16 @@
 - Screen/GUI Automation
 - Working with LLM APIs
 - Clipboard Handling
+- Working with Dictionaries
+- Nested Loops and Data Structures (Matrix/Grid Logic)
+- Input Validation with `while` Loops
+- Game Loop Design
+- Randomization Logic (`random.choice`, `random.remove`)
+- Using AI to Assist with Function Generation
+- Working with LLM Chat Completion APIs (Groq)
+- Designing AI Personality via System Prompts
+- Structuring Multi-role Messages (`user` / `system`)
+- Building Simple Terminal Chatbot Loops
 
 ## Project Structure
 
@@ -64,6 +99,15 @@ Python-Mega-Projects/
 │   ├── requirements.txt
 │   └── README.md
 │
+├── Slot-Machine/
+│   ├── main.py
+│   └── README.md
+│
+├── K-AI-Chatbot/
+│   ├── main.py
+│   ├── requirements.txt
+│   └── README.md
+│
 └── README.md
 ```
 
@@ -71,7 +115,7 @@ Python-Mega-Projects/
 
 This repository contains beginner-friendly Python mega projects that I built while learning Python programming.
 
-These projects helped me gain hands-on experience with automation, APIs, voice recognition, LLM integration, and real-world Python development.
+These projects helped me gain hands-on experience with automation, APIs, voice recognition, LLM integration, game logic, and real-world Python development.
 
 ## Future Improvements
 
@@ -83,6 +127,12 @@ These projects helped me gain hands-on experience with automation, APIs, voice r
 - Optimize code structure
 - Replace screen-automation chat reading with DOM/API-based methods for reliability
 - Add support for multiple chat platforms
+- Add a GUI version of the Slot Machine
+- Add more slot symbols and bonus rounds
+- Add persistent balance storage (save/load between sessions)
+- Add conversation memory/context to K Chatbot
+- Move Groq API key to environment variables for security
+- Add voice input/output support to K Chatbot
 
 ## Note
 
