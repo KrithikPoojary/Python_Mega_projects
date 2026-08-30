@@ -27,5 +27,8 @@ def get_number_of_lines():
                 else:
                     print("Enter the valid number.")
             else:
-                print("Amount should be entered as numbers")
-        # return amount
+                print("lines should be entered as numbers")
+            return lines
+
+def main():
+    balance = deposit()
