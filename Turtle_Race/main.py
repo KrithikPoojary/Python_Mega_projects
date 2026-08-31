@@ -16,3 +16,5 @@ def user_ask():
             continue
         if 2<= user <= 10:
             return user
+        else:
+            print("Please enter the number with in the range: ")
