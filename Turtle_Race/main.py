@@ -1,7 +1,7 @@
 import turtle
 
 WIDTH , HEIGHT = 500 , 500
-
+screen = turtle.Screen()
 
 def user_ask():
 
