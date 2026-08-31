@@ -3,6 +3,7 @@ import turtle
 WIDTH , HEIGHT = 500 , 500
 screen = turtle.Screen()
 screen.setup(WIDTH,HEIGHT)
+screen.title("Turtle_Race")
 
 def user_ask():
 
