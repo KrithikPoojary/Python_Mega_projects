@@ -14,3 +14,5 @@ def user_ask():
         else:
             print('Enter the Numbers only!')
             continue
+        if 2<= user <= 10:
+            return user
