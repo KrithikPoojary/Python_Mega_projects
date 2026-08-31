@@ -11,4 +11,5 @@ def user_ask():
         if user.isdigit():
             user = int(user)
 
-        
+        else:
+            print('Enter the Numbers only!')
