@@ -18,3 +18,5 @@ def user_ask():
             return user
         else:
             print("Please enter the number with in the range: ")
+
+user_ask()
