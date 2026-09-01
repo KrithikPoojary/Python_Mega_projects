@@ -18,9 +18,13 @@ def user_ask():
         else:
             print("Please enter the number with in the range: ")
 
-racer = user_ask()
 
 def init_turtle():
     screen = turtle.Screen()
     screen.setup(WIDTH,HEIGHT)
     screen.title("Turtle_Race")
+
+racer = user_ask()
+init_turtle()
+
+#Working
