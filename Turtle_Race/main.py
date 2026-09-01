@@ -22,3 +22,6 @@ def user_ask():
             print("Please enter the number with in the range: ")
 
 racer = user_ask()
+
+def init_turtle():
+    
