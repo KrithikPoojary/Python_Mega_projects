@@ -30,5 +30,8 @@ init_turtle()
 
 race = turtle.Turtle()
 race.forward(100)
-
+race.left(90)
+race.forward(100)
+race.left(90)
+race.backward(100)
 time.sleep(3)
