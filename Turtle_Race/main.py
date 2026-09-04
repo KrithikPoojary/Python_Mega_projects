@@ -27,4 +27,4 @@ def init_turtle():
 racer = user_ask()
 init_turtle()
 
-#Working...
+race = turtle.Turtle(100)
