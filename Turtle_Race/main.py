@@ -1,4 +1,5 @@
 import turtle
+import time
 
 WIDTH , HEIGHT = 500 , 500
 
@@ -27,4 +28,7 @@ def init_turtle():
 racer = user_ask()
 init_turtle()
 
-race = turtle.Turtle(100)
+race = turtle.Turtle()
+race.forward(100)
+
+time.sleep(3)
