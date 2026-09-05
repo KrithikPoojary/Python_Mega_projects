@@ -32,6 +32,10 @@ def turtle_moves(colors):
         go.color(color)
         go.shape('turtle')
         go.left(90)
+        go.penup()
+        #pos
+        go.pendown()
+        turtles.append(go)
 # race = turtle.Turtle()
 # race.penup()  #NOt give us line 
 # race.speed(1)
@@ -51,3 +55,4 @@ init_turtle()
 random.shuffle(COLORS)
 colors = COLORS[:racer]    #We are slicing the COLOUR variables up to user input.
 # print(colors)
+turtle_moves(colors)
