@@ -29,10 +29,12 @@ racer = user_ask()
 init_turtle()
 
 race = turtle.Turtle()
+race.penup()  #NOt give us line 
 race.speed(1)
 race.shape('turtle')
 race.color("pink")
 race.forward(100)
+race.pendown()   #Give the line
 race.left(90)
 race.forward(100)
 race.right(90)
