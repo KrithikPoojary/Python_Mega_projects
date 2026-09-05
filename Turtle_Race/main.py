@@ -27,6 +27,7 @@ def init_turtle():
 
 def turtle_moves(colors):
     turtles = []
+    spacingX = WIDTH // (len(colors)+ 1)
     for i , color in enumerate(colors):    # enumerate choose both vlaue and its  index value
         go = turtle.Turtle()
         go.color(color)
@@ -55,4 +56,5 @@ init_turtle()
 random.shuffle(COLORS)
 colors = COLORS[:racer]    #We are slicing the COLOUR variables up to user input.
 # print(colors)
+# print(len(colors))
 turtle_moves(colors)
