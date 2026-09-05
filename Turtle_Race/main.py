@@ -30,6 +30,7 @@ init_turtle()
 
 race = turtle.Turtle()
 race.speed(1)
+race.shape('turtle')
 race.forward(100)
 race.left(90)
 race.forward(100)
