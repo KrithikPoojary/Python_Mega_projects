@@ -76,14 +76,23 @@ colors = COLORS[:racer]    #We are slicing the COLOUR variables up to user input
 # print(len(colors))
 # turtle_moves(colors)
 winner = race(colors)
-print(winner)
+
 
 print("---------------------------------")
 print("Lets play a small Guess game")
 print("---------------------------------")
 
-print(colors)
-print()
-user = input("Choose the color of turtle amoung them")
+while True:
+    print(colors)
+    print()
+    user = input("Choose the color of turtle amoung them: ").lower()
 
+    if user in colors:
+        break
+    else:
+        print("Please choose number amoung the given ")
 
+if user == winner:
+    print("Hurrryyyy nice guesss buddy!!!!!!!!")
+else:
+    print("Better luck next ")
