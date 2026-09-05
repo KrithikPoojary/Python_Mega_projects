@@ -45,13 +45,13 @@ def turtle_moves(colors):
 def race(colors):
     Turtles = turtle_moves(colors)
     while  True:
-        for racer in turtle:
+        for racer in Turtles:
             distance = random.randrange(1 , 20)
             racer.forward(distance)
 
             x, y = racer.pos()
             if y >= HEIGHT // 2 -10:
-                return colors[Turtles.index(turtle)]
+                return colors[Turtles.index(racer)]
             
 # ----------------------------------------------------------------
 # race = turtle.Turtle()
