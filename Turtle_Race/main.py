@@ -39,6 +39,10 @@ def turtle_moves(colors):
         turtles.append(go)
 
     return turtles
+
+
+def race():
+    
 # race = turtle.Turtle()
 # race.penup()  #NOt give us line 
 # race.speed(1)
