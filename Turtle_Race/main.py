@@ -55,7 +55,7 @@ def race(colors):
             
 # ----------------------------------------------------------------
 # race = turtle.Turtle()
-# race.penup()  #NOt give us line 
+# race.penup()  #NOt give us line
 # race.speed(1)
 # race.shape('turtle')
 # race.color("pink")
@@ -68,14 +68,9 @@ def race(colors):
 # # time.sleep(3)
 
 racer = user_ask()
-init_turtle()
-
 random.shuffle(COLORS)
 colors = COLORS[:racer]    #We are slicing the COLOUR variables up to user input.
-# print(colors)
-# print(len(colors))
-# turtle_moves(colors)
-winner = race(colors)
+
 
 
 print("---------------------------------")
@@ -90,9 +85,18 @@ while True:
     if user in colors:
         break
     else:
-        print("Please choose number amoung the given ")
+        print("Please choose Turtle color amoung the given list")
+
+
+init_turtle()
+
+
+# print(colors)
+# print(len(colors))
+# turtle_moves(colors)
+winner = race(colors)
 
 if user == winner:
     print("Hurrryyyy nice guesss buddy!!!!!!!!")
 else:
-    print("Better luck next ")
+    print(f"Better luck next time Nigga , Winner is {winner} Turtle")
