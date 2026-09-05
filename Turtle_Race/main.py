@@ -78,5 +78,12 @@ colors = COLORS[:racer]    #We are slicing the COLOUR variables up to user input
 winner = race(colors)
 print(winner)
 
+print("---------------------------------")
+print("Lets play a small Guess game")
+print("---------------------------------")
 
-print("Lets play a ")
+print(colors)
+print()
+user = input("Choose the color of turtle amoung them")
+
+
