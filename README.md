@@ -6,6 +6,7 @@
 - WhatsApp Auto-Reply Chatbot
 - Slot Machine
 - K - AI Chatbot
+- Turtle Race
 
 ## Jarvis AI Assistant Features
 
@@ -46,6 +47,17 @@
 - Simple Terminal-based Chat Loop
 - Exit Commands (`exit`, `bye`, `quit`)
 
+## Turtle Race Features
+
+- User-Selectable Number of Racers (2-10)
+- Random Turtle Color Assignment from a Preset Palette
+- Guess-the-Winner Mini Game Before the Race Starts
+- Dynamic Starting Position Calculation Based on Racer Count
+- Randomized Turtle Movement for Unpredictable Races
+- Automatic Winner Detection at the Finish Line
+- Turtle Graphics-based Visual Race Simulation
+- Input Validation for Racer Count and Color Guess
+
 ## Technologies
 
 - Python 3
@@ -58,6 +70,7 @@
 - Pyperclip
 - Groq API
 - random (built-in module)
+- turtle (built-in module)
 
 ## What I Learned
 
@@ -84,6 +97,10 @@
 - Designing AI Personality via System Prompts
 - Structuring Multi-role Messages (`user` / `system`)
 - Building Simple Terminal Chatbot Loops
+- Turtle Graphics Programming
+- Coordinate-based Positioning and Movement
+- Using `enumerate()` for Indexed Iteration
+- Simulating Simple Games with Randomness
 
 ## Project Structure
 
@@ -91,22 +108,21 @@
 Python-Mega-Projects/
 ├── Jarvis-AI-Assistant/
 │   ├── main.py
-│   ├── requirements.txt
-│   └── README.md
+│   └── requirements.txt
 │
 ├── WhatsApp-Auto-Reply-Chatbot/
 │   ├── main.py
-│   ├── requirements.txt
-│   └── README.md
+│   └── requirements.txt
 │
 ├── Slot-Machine/
-│   ├── main.py
-│   └── README.md
+│   └── main.py
 │
 ├── K-AI-Chatbot/
 │   ├── main.py
-│   ├── requirements.txt
-│   └── README.md
+│   └── requirements.txt
+│
+├── Turtle-Race/
+│   └── main.py
 │
 └── README.md
 ```
@@ -133,6 +149,9 @@ These projects helped me gain hands-on experience with automation, APIs, voice r
 - Add conversation memory/context to K Chatbot
 - Move Groq API key to environment variables for security
 - Add voice input/output support to K Chatbot
+- Add adjustable turtle speed settings to Turtle Race
+- Add a scoreboard/leaderboard for repeated Turtle Race guesses
+- Add sound effects for the Turtle Race finish
 
 ## Note
 
