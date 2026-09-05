@@ -25,9 +25,13 @@ def init_turtle():
     screen.setup(WIDTH,HEIGHT)
     screen.title("Turtle_Race")
 
-racer = user_ask()
-init_turtle()
-
+def turtle_moves(colors):
+    turtles = []
+    for i , color in enumerate(colors):    # enumerate choose both vlaue and its  index value
+        go = turtle.Turtle()
+        go.color(color)
+        go.shape('turtle')
+        go
 # race = turtle.Turtle()
 # race.penup()  #NOt give us line 
 # race.speed(1)
@@ -40,6 +44,9 @@ init_turtle()
 # race.right(90)
 # race.backward(100)
 # # time.sleep(3)
+
+racer = user_ask()
+init_turtle()
 
 random.shuffle(COLORS)
 colors = COLORS[:racer]    #We are slicing the COLOUR variables up to user input.
