@@ -31,7 +31,7 @@ def turtle_moves(colors):
         go = turtle.Turtle()
         go.color(color)
         go.shape('turtle')
-        go
+        go.left(90)
 # race = turtle.Turtle()
 # race.penup()  #NOt give us line 
 # race.speed(1)
