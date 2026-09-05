@@ -75,6 +75,5 @@ colors = COLORS[:racer]    #We are slicing the COLOUR variables up to user input
 # print(colors)
 # print(len(colors))
 # turtle_moves(colors)
-
 winner = race(colors)
 print(winner)
