@@ -41,3 +41,6 @@ init_turtle()
 # race.backward(100)
 # # time.sleep(3)
 
+random.shuffle(COLORS)
+colors = COLORS[:racer]    #We are slicing the COLOUR variables up to user input.
+print(colors)
