@@ -1,8 +1,8 @@
 import turtle
 import time
-
+import random
 WIDTH , HEIGHT = 500 , 500
-
+COLORS  = ['yellow' , 'cyan' , 'pink' , 'brown' , 'black' , 'red' , 'blue' , 'green' , 'purple' , 'orange']
 def user_ask():
 
     while True:
