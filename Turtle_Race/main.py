@@ -40,9 +40,20 @@ def turtle_moves(colors):
 
     return turtles
 
+# ---------------------------------------------------------------
+#THis one function was hinted from AI
+def race(colors):
+    Turtles = turtle_moves(colors)
+    while  True:
+        for racer in turtle:
+            distance = random.randrange(1 , 20)
+            racer.forward(distance)
 
-def race():
-    
+            x, y = racer.pos()
+            if y >= HEIGHT // 2 -10:
+                return colors[Turtles.index(turtle)]
+            
+# ----------------------------------------------------------------
 # race = turtle.Turtle()
 # race.penup()  #NOt give us line 
 # race.speed(1)
@@ -63,4 +74,7 @@ random.shuffle(COLORS)
 colors = COLORS[:racer]    #We are slicing the COLOUR variables up to user input.
 # print(colors)
 # print(len(colors))
-turtle_moves(colors)
+# turtle_moves(colors)
+
+winner = race(colors)
+print(winner)
