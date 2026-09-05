@@ -34,9 +34,11 @@ def turtle_moves(colors):
         go.shape('turtle')
         go.left(90)
         go.penup()
-        #pos
+        go.setpos(-WIDTH//2 +(i + 1) * spacingX, -HEIGHT//2 +20)    #This value is taken from ai..
         go.pendown()
         turtles.append(go)
+
+    return turtles
 # race = turtle.Turtle()
 # race.penup()  #NOt give us line 
 # race.speed(1)
