@@ -3,4 +3,8 @@ from curses import wrapper
 
 def main(stdscr):
     stdscr.clear()
-    stdscr.
+    stdscr.addstr("Hello world")
+    stdscr.refresh()
+    stdscr.getkey()
+
+wrapper(main)
