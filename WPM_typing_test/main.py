@@ -9,4 +9,4 @@ def main(stdscr):
 
 wrapper(main)
 
-workin
+working
