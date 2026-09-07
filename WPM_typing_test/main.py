@@ -8,3 +8,5 @@ def main(stdscr):
     stdscr.getkey()
 
 wrapper(main)
+
+wo
