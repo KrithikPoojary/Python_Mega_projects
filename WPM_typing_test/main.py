@@ -3,9 +3,9 @@ from curses import wrapper
 
 def main(stdscr):
     curses.init_pair(1 , curses.COLOR_RED , curses.COLOR_WHITEl)
-    curses.init_pair()
+    curses.init_pair(2 , curses.COLOR_YELLOW , curses.COLOR_WHITE) 
     stdscr.clear()
-    stdscr.addstr("Hello world")
+    stdscr.addstr("Hello world" , curses.color_pair(1))
     stdscr.refresh()
     stdscr.getkey()
 
