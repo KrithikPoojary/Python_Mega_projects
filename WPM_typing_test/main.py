@@ -15,10 +15,10 @@ def wpm_work(stdscr):
     stdscr.clear()
     stdscr.addstr(Target_test)
     stdscr.refresh()
-    stdscr.getkey()
+    
 
     while True:
-        
+        key = stdscr.getkey()
 
 def main(stdscr):
     curses.init_pair(1 , curses.COLOR_GREEN , curses.COLOR_BLACK)
