@@ -9,6 +9,15 @@ def start_screen(stdscr):    #Standard screen
     stdscr.getkey()
     
 
+def wpm_work(stdscr):
+    Target_test = "Hello world we are testing our logic.."
+    current_test = []
+    stdscr.clear()
+    stdscr.addstr(Target_test)
+    stdscr.refresh()
+    stdscr.getkey()
+
+
 
 def main(stdscr):
     curses.init_pair(1 , curses.COLOR_GREEN , curses.COLOR_BLACK)
@@ -17,6 +26,7 @@ def main(stdscr):
     # key = stdscr.getkey()
     # print(key)
     start_screen(stdscr)
+    wpm_work(stdscr)
 
 
 wrapper(main)
