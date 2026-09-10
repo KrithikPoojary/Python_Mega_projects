@@ -12,13 +12,16 @@ def start_screen(stdscr):    #Standard screen
 def wpm_work(stdscr):
     Target_test = "Hello world we are testing our logic.."
     current_test = []
-    stdscr.clear()
-    stdscr.addstr(Target_test)
-    stdscr.refresh()
     
 
     while True:
         key = stdscr.getkey()
+        current_test.append(key)
+
+        stdscr.clear()
+        stdscr.addstr(Target_test)
+        
+        stdscr.refresh()
 
 def main(stdscr):
     curses.init_pair(1 , curses.COLOR_GREEN , curses.COLOR_BLACK)
