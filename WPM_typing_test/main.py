@@ -20,7 +20,8 @@ def wpm_work(stdscr):
 
         stdscr.clear()
         stdscr.addstr(Target_test)
-        
+        for char in  current_test:
+            stdscr.addstr(char , curses.color_pair(1))
         stdscr.refresh()
 
 def main(stdscr):
