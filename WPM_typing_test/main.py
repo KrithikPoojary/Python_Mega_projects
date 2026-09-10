@@ -17,6 +17,8 @@ def wpm_work(stdscr):
     stdscr.refresh()
     stdscr.getkey()
 
+    while True:
+        
 
 def main(stdscr):
     curses.init_pair(1 , curses.COLOR_GREEN , curses.COLOR_BLACK)
