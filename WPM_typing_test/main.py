@@ -18,7 +18,7 @@ def wpm_work(stdscr):
         key = stdscr.getkey()
         current_test.append(key)
 
-        stdscr.clear()
+        stdscr.clear()   #Must needed because it might loop the char again and again....
         stdscr.addstr(Target_test)
         for char in  current_test:
             stdscr.addstr(char , curses.color_pair(1))
