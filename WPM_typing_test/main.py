@@ -25,6 +25,10 @@ def wpm_work(stdscr):
 
         if ord(key) == 27:
             break
+        if key in ("KEY_BACKSPACE" , "\b" , "\x7f"):
+            if len(current_test > 0):
+                current_test.pop()
+
 
 def main(stdscr):
     curses.init_pair(1 , curses.COLOR_GREEN , curses.COLOR_BLACK)
