@@ -15,16 +15,16 @@ def wpm_work(stdscr):
     
 
     while True:
-        key = stdscr.getkey()
-        current_test.append(key)
-
-        if ord(key) == 27:
-            break
         stdscr.clear()   #Must needed because it might loop the char again and again....
         stdscr.addstr(Target_test)
         for char in  current_test:
             stdscr.addstr(char , curses.color_pair(1))
         stdscr.refresh()
+        key = stdscr.getkey()
+        current_test.append(key)
+
+        if ord(key) == 27:
+            break
 
 def main(stdscr):
     curses.init_pair(1 , curses.COLOR_GREEN , curses.COLOR_BLACK)
