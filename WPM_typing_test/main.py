@@ -21,7 +21,7 @@ def wpm_work(stdscr):
             stdscr.addstr(char , curses.color_pair(1))
         stdscr.refresh()
         key = stdscr.getkey()
- 
+
         if ord(key) == 27:  #This number is our keyboard number each and every key has that unique number
             break
 
