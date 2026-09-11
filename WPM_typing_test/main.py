@@ -22,9 +22,10 @@ def wpm_work(stdscr):
         stdscr.refresh()
         key = stdscr.getkey()
         current_test.append(key)
-
-        if ord(key) == 27:
+ 
+        if ord(key) == 27:  #This number is our keyboard number each and every key has that unique number
             break
+
         if key in ("KEY_BACKSPACE" , "\b" , "\x7f"):
             if len(current_test > 0):
                 current_test.pop()
