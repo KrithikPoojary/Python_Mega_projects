@@ -8,6 +8,13 @@ def start_screen(stdscr):    #Standard screen
     stdscr.refresh()
     stdscr.getkey()
     
+def display_test(stdscr , target, current , wpm=0):
+    stdscr.addstr(Target_test)
+    for  i , char in  enumerate(current_test):
+        stdscr.addstr(char , curses.color_pair(1))
+
+
+
 
 def wpm_work(stdscr):
     Target_test = "Hello world we are testing our logic.."
