@@ -12,8 +12,8 @@ def display_test(stdscr , target, current , wpm=0):
     stdscr.addstr(target)
     for  i , char in  enumerate(current):
         correct_char = target[i]
-        
-        stdscr.addstr(0 , i , char , curses.color_pair(1))  # i will represent at which index will it be placed on..
+        curses.color_pair(1)
+        stdscr.addstr(0 , i , char , )  # i will represent at which index will it be placed on..
 #(0 , i)  will be the logic which will be overlayed on top of the current test
 
 
