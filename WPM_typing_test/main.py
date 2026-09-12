@@ -48,3 +48,5 @@ def main(stdscr):
 
 wrapper(main)
 
+
+worki
