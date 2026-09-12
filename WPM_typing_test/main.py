@@ -12,7 +12,7 @@ def display_test(stdscr , target, current , wpm=0):
     stdscr.addstr(target)
     for  i , char in  enumerate(current):
         correct_char = target[i]
-        curses.color_pair(1)
+        color = curses.color_pair(1)
         if char != correct_char:
             color = curses.color_pair(2)
         stdscr.addstr(0 , i , char , color)  # i will represent at which index will it be placed on..
