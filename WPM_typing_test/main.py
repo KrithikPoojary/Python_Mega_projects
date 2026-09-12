@@ -14,8 +14,8 @@ def display_test(stdscr , target, current , wpm=0):
         correct_char = target[i]
         curses.color_pair(1)
         if char != correct_char:
-            color = curses.color_pair()
-        stdscr.addstr(0 , i , char , )  # i will represent at which index will it be placed on..
+            color = curses.color_pair(2)
+        stdscr.addstr(0 , i , char , color)  # i will represent at which index will it be placed on..
 #(0 , i)  will be the logic which will be overlayed on top of the current test
 
 
