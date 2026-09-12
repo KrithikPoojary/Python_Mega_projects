@@ -9,11 +9,10 @@ def start_screen(stdscr):    #Standard screen
     stdscr.getkey()
     
 def display_test(stdscr , target, current , wpm=0):
-    stdscr.addstr(Target_test)
-    for  i , char in  enumerate(current_test):
-        stdscr.addstr(char , curses.color_pair(1))
-
-
+    stdscr.addstr(target)
+    for  i , char in  enumerate(current):
+        stdscr.addstr(0 , i , char , curses.color_pair(1))  # i will represent at which index will it be placed on..
+#(0 , i)  will be the logic which will be overlayed on top of the current test
 
 
 def wpm_work(stdscr):
@@ -23,7 +22,7 @@ def wpm_work(stdscr):
 
     while True:
         stdscr.clear()   #Must needed because it might loop the char again and again....
-
+        display_test(stdscr)
         stdscr.refresh()
         key = stdscr.getkey()
 
