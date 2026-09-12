@@ -44,4 +44,3 @@ def main(stdscr):
 
 wrapper(main)
 
-#working..
