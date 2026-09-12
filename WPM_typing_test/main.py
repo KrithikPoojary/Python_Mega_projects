@@ -22,7 +22,7 @@ def wpm_work(stdscr):
 
     while True:
         stdscr.clear()   #Must needed because it might loop the char again and again....
-        display_test(stdscr)
+        display_test(stdscr , )
         stdscr.refresh()
         key = stdscr.getkey()
 
