@@ -71,6 +71,8 @@ def main(stdscr):
     start_screen(stdscr)
     wpm_work(stdscr)
 
+    stdscr.addstr(2 , 0 , "You have completed the test !! please press any key to continue")
+    stdscr.getkey()
 
 wrapper(main)
 
