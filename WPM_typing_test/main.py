@@ -39,10 +39,16 @@ def wpm_work(stdscr):
         stdscr.clear()   #Must needed because it might loop the char again and again....
         display_test(stdscr ,Target_test , current_test , wpm)
         stdscr.refresh()
-        key = stdscr.getkey()
 
+        try:                              #
+            key = stdscr.getkey()         # Need to learn the logic of try - except
+        except:                           #
+            continue                      #
+ 
         if ord(key) == 27:  #This number is our keyboard number each and every key has that unique number
             break
+
+        #now for ending text is 
 
         if key in ("KEY_BACKSPACE" , "\b" , "\x7f"):  #This is basically our 'backspace' key value in our OS
             if len(current_test) > 0:
