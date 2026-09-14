@@ -31,7 +31,7 @@ def wpm_work(stdscr):
     start_time = time.time()  #This keep track of the starting time before executing the while loop.
     while True:
         time_elapsed = max(time.time() - start_time , 1 )  #MAx is because if any chance "0" occur the entire calcu will be disrturbed
-        wpm = len(current_test) / (time_elapsed / 60)    #Formula for the wpm calculation
+        wpm = round((len(current_test) / (time_elapsed / 60)) / 5 , 2)   #Formula for the wpm calculation
 
 
 
