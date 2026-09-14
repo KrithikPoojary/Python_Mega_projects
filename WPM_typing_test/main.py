@@ -48,7 +48,9 @@ def wpm_work(stdscr):
         if ord(key) == 27:  #This number is our keyboard number each and every key has that unique number
             break
 
-        #now for ending text is 
+        #now for ending text is: we will compare current_text to target_text
+        #problem is current_text is list and target_text is string we cannot compare them.... 
+        #
 
         if key in ("KEY_BACKSPACE" , "\b" , "\x7f"):  #This is basically our 'backspace' key value in our OS
             if len(current_test) > 0:
