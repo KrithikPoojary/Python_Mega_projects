@@ -13,7 +13,7 @@ def start_screen(stdscr):    #Standard screen
 def display_test(stdscr , target, current , wpm=0):
     stdscr.addstr(target)
     stdscr.addstr(1 , 0 , f"WPM = {wpm}")    #(That {1 , 0} is the logic of printing a string in the next line , or second line of existing line)
-    start_time = time.time()  #This keep track of the starting time before ex
+    start_time = time.time()  #This keep track of the starting time before executing the while loop.
 
     for  i , char in  enumerate(current):
         correct_char = target[i]
