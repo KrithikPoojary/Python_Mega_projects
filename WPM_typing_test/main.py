@@ -23,6 +23,8 @@ def display_test(stdscr , target, current , wpm=0):
         stdscr.addstr(0 , i , char , color)  # i will represent at which index will it be placed on..
 #(0 , i)  will be the logic which will be overlayed on top of the current test
 
+def load_text():
+    with open("")
 
 def wpm_work(stdscr):
     Target_test = "Hello world we are testing our logic.."
@@ -76,6 +78,7 @@ def main(stdscr):
         key = stdscr.getkey()
         if ord(key) == 27:
             break
+
 wrapper(main)
 
 
