@@ -29,9 +29,10 @@ def wpm_work(stdscr):
     current_test = []
     wpm= 0
     start_time = time.time()  #This keep track of the starting time before executing the while loop.
+    stdscr.nodelay(True)    #This will encrupt the delay between the wpm and stdscr block of world
     while True:
         time_elapsed = max(time.time() - start_time , 1 )  #MAx is because if any chance "0" occur the entire calcu will be disrturbed
-        wpm = round((len(current_test) / (time_elapsed / 60)) / 5 , 2)   #Formula for the wpm calculation
+        wpm = round((len(current_test) / (time_elapsed / 60)) / 5)   #Formula for the wpm calculation
 
 
 
