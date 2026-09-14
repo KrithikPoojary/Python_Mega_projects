@@ -51,7 +51,9 @@ def wpm_work(stdscr):
         #now for ending text is: we will compare current_text to target_text
         #problem is current_text is list and target_text is string we cannot compare them.... 
         #we will use .join function for this simple !!!!!
-        
+        if "".join(current_test) == Target_test:
+            stdscr.nodelay(False)
+            break
 
         if key in ("KEY_BACKSPACE" , "\b" , "\x7f"):  #This is basically our 'backspace' key value in our OS
             if len(current_test) > 0:
