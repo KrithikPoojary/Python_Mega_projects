@@ -10,9 +10,9 @@ def start_screen(stdscr):    #Standard screen
     
 def display_test(stdscr , target, current , wpm=0):
     stdscr.addstr(target)
-    stdscr.addstr(1 , 0 , f"WPM = {wpm}")
+    stdscr.addstr(1 , 0 , f"WPM = {wpm}")    #(That {1 , 0} is the logic of printing a string in the next line , or second line of existing line)
 
-    
+
     for  i , char in  enumerate(current):
         correct_char = target[i]
         color = curses.color_pair(1)
