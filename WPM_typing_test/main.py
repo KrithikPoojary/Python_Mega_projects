@@ -13,7 +13,7 @@ def start_screen(stdscr):    #Standard screen
 def display_test(stdscr , target, current , wpm=0):
     stdscr.addstr(target)
     stdscr.addstr(1 , 0 , f"WPM = {wpm}")    #(That {1 , 0} is the logic of printing a string in the next line , or second line of existing line)
-    start_time = time.time()  #This keep track of the starting time before executing the while loop.
+
 
     for  i , char in  enumerate(current):
         correct_char = target[i]
@@ -28,8 +28,9 @@ def wpm_work(stdscr):
     Target_test = "Hello world we are testing our logic.."
     current_test = []
     wpm= 0
-
+    start_time = time.time()  #This keep track of the starting time before executing the while loop.
     while True:
+        time_elapsed = max(time.time() - start_time , 1 )  
         stdscr.clear()   #Must needed because it might loop the char again and again....
         display_test(stdscr ,Target_test , current_test , wpm)
         stdscr.refresh()
