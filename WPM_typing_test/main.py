@@ -49,7 +49,7 @@ def wpm_work(stdscr):
             key = stdscr.getkey()         # Need to learn the logic of try - except
         except:                           #
             continue                      #
- 
+
         if ord(key) == 27:  #This number is our keyboard number each and every key has that unique number
             break
 
