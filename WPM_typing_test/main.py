@@ -22,7 +22,7 @@ def display_test(stdscr , target, current , wpm=0):
 def wpm_work(stdscr):
     Target_test = "Hello world we are testing our logic.."
     current_test = []
-    
+    wpm= 0
 
     while True:
         stdscr.clear()   #Must needed because it might loop the char again and again....
