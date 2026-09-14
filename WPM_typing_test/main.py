@@ -36,7 +36,7 @@ def wpm_work(stdscr):
         if key in ("KEY_BACKSPACE" , "\b" , "\x7f"):  #This is basically our 'backspace' key value in our OS
             if len(current_test) > 0:
                 current_test.pop()
-        elif len(current_test) < len(Target_test):
+        elif len(current_test) < len(Target_test):   # this is not equals to because len always target the indexs ...
             current_test.append(key)
 
 
