@@ -10,6 +10,9 @@ def start_screen(stdscr):    #Standard screen
     
 def display_test(stdscr , target, current , wpm=0):
     stdscr.addstr(target)
+    stdscr.addstr(1 , 0 , f"WPM = {wpm}")
+
+    
     for  i , char in  enumerate(current):
         correct_char = target[i]
         color = curses.color_pair(1)
@@ -26,7 +29,7 @@ def wpm_work(stdscr):
 
     while True:
         stdscr.clear()   #Must needed because it might loop the char again and again....
-        display_test(stdscr ,Target_test , current_test )
+        display_test(stdscr ,Target_test , current_test , wpm)
         stdscr.refresh()
         key = stdscr.getkey()
 
