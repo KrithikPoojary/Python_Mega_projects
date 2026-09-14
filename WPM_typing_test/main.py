@@ -24,13 +24,14 @@ def display_test(stdscr , target, current , wpm=0):
 #(0 , i)  will be the logic which will be overlayed on top of the current test
 
 def load_text():
-    with open("Python-mega-projects\WPM_typing_test\text.txt" , "r") as f:
+    with open("Users\krith\OneDrive\Desktop\python\Python-mega-projects\WPM_typing_test\text.txt" , "r") as f:
         line = f.readlines()
-        return random.choice(line).strip()  #we used s
+        return random.choice(line).strip()  #we used strip because there are always invisble '\n' in the ever line..
+                                            #To remove that we add .strip()
 
     
 def wpm_work(stdscr):
-    Target_test = "Hello world we are testing our logic.."
+    Target_test = load_text()
     current_test = []
     wpm= 0
     start_time = time.time()  #This keep track of the starting time before executing the while loop.
@@ -54,7 +55,7 @@ def wpm_work(stdscr):
             break
 
         #now for ending text is: we will compare current_text to target_text
-        #problem is current_text is list and target_text is string we cannot compare them.... 
+        #problem is current_text is list and target_text is string we cannot compare them....  
         #we will use .join function for this simple !!!!!
         if "".join(current_test) == Target_test:
             stdscr.nodelay(False)
