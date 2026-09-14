@@ -68,12 +68,13 @@ def main(stdscr):
     curses.init_pair(3 , curses.COLOR_WHITE , curses.COLOR_BLACK)
     # key = stdscr.getkey()
     # print(key)
+        
     start_screen(stdscr)
-    wpm_work(stdscr)
-
-    stdscr.addstr(2 , 0 , "You have completed the test !! please press any key to continue")
-    stdscr.getkey()
-
+    while True:
+        wpm_work(stdscr)
+        stdscr.addstr(2 , 0 , "You have completed the test !! please press any key to continue")
+        key = stdscr.getkey()
+        if ord(key)
 wrapper(main)
 
 
