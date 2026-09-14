@@ -74,7 +74,8 @@ def main(stdscr):
         wpm_work(stdscr)
         stdscr.addstr(2 , 0 , "You have completed the test !! please press any key to continue")
         key = stdscr.getkey()
-        if ord(key)
+        if ord(key) == 27:
+            break
 wrapper(main)
 
 
