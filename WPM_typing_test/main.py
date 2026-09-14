@@ -24,7 +24,7 @@ def display_test(stdscr , target, current , wpm=0):
 #(0 , i)  will be the logic which will be overlayed on top of the current test
 
 def load_text():
-    with open("Users\krith\OneDrive\Desktop\python\Python-mega-projects\WPM_typing_test\text.txt" , "r") as f:
+    with open("text.txt" , "r") as f:
         line = f.readlines()
         return random.choice(line).strip()  #we used strip because there are always invisble '\n' in the ever line..
                                             #To remove that we add .strip()
