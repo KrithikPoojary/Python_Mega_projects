@@ -7,6 +7,7 @@
 - Slot Machine
 - K - AI Chatbot
 - Turtle Race
+- WPM Typing Test
 
 ## Jarvis AI Assistant Features
 
@@ -58,6 +59,18 @@
 - Turtle Graphics-based Visual Race Simulation
 - Input Validation for Racer Count and Color Guess
 
+## WPM Typing Test Features
+
+- Terminal-based Speed Typing Test using `curses`
+- Random Practice Text Loaded from `text.txt`
+- Real-Time WPM (Words Per Minute) Calculation
+- Live Character-by-Character Color Feedback (green for correct, red for incorrect)
+- Backspace Support for Correcting Mistakes
+- Auto-Completion Detection When Typed Text Matches Target Text
+- Escape Key to Exit at Any Time
+- Replay Loop to Take Another Test After Completion
+- Non-blocking Key Input for Smooth Live Updates
+
 ## Technologies
 
 - Python 3
@@ -69,6 +82,7 @@
 - PyAutoGUI
 - Pyperclip
 - Groq API
+- curses (built-in module)
 - random (built-in module)
 - turtle (built-in module)
 
@@ -101,6 +115,14 @@
 - Coordinate-based Positioning and Movement
 - Using `enumerate()` for Indexed Iteration
 - Simulating Simple Games with Randomness
+- Terminal UI Programming with `curses`
+- Real-Time Input Handling and Non-blocking Key Reads
+- Live Timing and Rate Calculations (WPM Formula)
+- Reading and Processing Text Files
+- Color Pair Setup and Conditional Text Styling in the Terminal
+- Comparing Lists and Strings via `"".join()`
+- Handling Special Keys (Backspace, Escape) via Key Codes
+- Try/Except for Safe Input Handling
 
 ## Project Structure
 
@@ -124,6 +146,10 @@ Python-Mega-Projects/
 ├── Turtle-Race/
 │   └── main.py
 │
+├── WPM-Typing-Test/
+│   ├── main.py
+│   └── text.txt
+│
 └── README.md
 ```
 
@@ -131,7 +157,7 @@ Python-Mega-Projects/
 
 This repository contains beginner-friendly Python mega projects that I built while learning Python programming.
 
-These projects helped me gain hands-on experience with automation, APIs, voice recognition, LLM integration, game logic, and real-world Python development.
+These projects helped me gain hands-on experience with automation, APIs, voice recognition, LLM integration, game logic, terminal UI programming, and real-world Python development.
 
 ## Future Improvements
 
@@ -152,6 +178,10 @@ These projects helped me gain hands-on experience with automation, APIs, voice r
 - Add adjustable turtle speed settings to Turtle Race
 - Add a scoreboard/leaderboard for repeated Turtle Race guesses
 - Add sound effects for the Turtle Race finish
+- Add accuracy percentage tracking to WPM Typing Test
+- Add difficulty levels (short/medium/long texts) to WPM Typing Test
+- Store and display best WPM scores across sessions
+- Expand the `text.txt` practice text pool
 
 ## Note
 
