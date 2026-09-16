@@ -15,5 +15,5 @@ maze = [
 
 def main(stdscr):
     stdscr.clear()
-    stdscr.
+    stdscr.addstr(0 , 0 , "HEllo world")
 
