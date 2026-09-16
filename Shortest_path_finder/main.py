@@ -13,6 +13,6 @@ maze = [
     ["#", "#", "#", "#", "#", "#", "#", "X", "#"]
 ]
 
-def main():
+def main(stdscr):
     pass
 
