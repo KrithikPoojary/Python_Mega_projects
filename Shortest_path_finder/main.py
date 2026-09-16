@@ -21,4 +21,4 @@ def main(stdscr):
 
 
 
-wrapper()
+wrapper(main)
