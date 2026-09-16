@@ -14,5 +14,5 @@ maze = [
 ]
 
 def main(stdscr):
-    pass
+    stdscr.clear()
 
